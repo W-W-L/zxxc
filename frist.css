@@ -1,0 +1,218 @@
+.connatior{
+  color: rgba(255,255, 255, .5);
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+.navbar {
+  display: flex;
+  justify-content: center; /* 使内容在中间对齐 */
+  align-items: center;
+  background-color: #1E1E1E;
+  color: rgba(255,255, 255, .5);
+  padding: 0.5em 1em;
+}
+ .clearfix{
+  margin: 20px 0px 0 25px;
+
+}
+.clearfix::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.clearfix li{
+height: 50px;
+float: left;
+position: relative;
+}
+/* 导航栏链接样式 */
+.navbar  .navbar-con ul li a {
+  display: block;
+  color: rgba(255,255, 255, .5);
+  text-decoration: none;
+  padding: 0 8px;
+  font-size: 14px;
+  position: relative;
+}
+.navbar  .navbar-con ul li a:hover{
+  color: white;
+}
+/* 鼠标悬停链接样式 */
+.navbar  .navbar-con ul li div{
+  width: 120px;
+  background-color: #1E1E1E;
+  position:absolute;
+  text-align: center;
+  left: -27px;
+  z-index: 999;
+  font-size: 12px;
+  top: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 3px 0px #4a54ff;
+  display: none;
+}
+.navbar  .navbar-con ul li div a{
+  height: 30px;
+  color: white;
+  background-color: #1E1E1E;
+  line-height: 30px;
+  padding: 0;
+  font-size: 12px;
+}
+.navbar  .navbar-con ul li div a:hover{
+  background-image:linear-gradient(to right,#add8e6,#0008b0);
+}
+.navbar  .navbar-con ul li:hover div{
+  color: white;
+  display: block;
+}
+/* 导航栏右侧图标样式 */
+.navbar-icons {
+ margin-left: 260px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-icons a {
+  margin-left: 1em;
+}
+
+/* 图标大小 */
+.navbar-icons i {
+  font-size: 1.5em;
+  padding: 0px 15px;
+}
+
+/* 搜索框样式 */
+.navbar input[type="text"] {
+  background-color:#1E1E1E;
+  min-height: 25px;
+  min-width: 25px;
+  border: 1px solid #abaaaa;
+  border-radius: 99px;
+}
+.navbar input[type="text"]:hover {
+  /* box-shadow: 0 0 50px rgba(255,255, 255, .5); */
+  border-color: white;
+}
+
+/* 用户名列表样式 */
+.username-list {
+  display: flex;
+  justify-content: center; /* 使内容在中间对齐 */
+  align-items: center;
+  background-color: #1E1E1E;
+  color: rgba(255,255, 255, .5);
+  flex-direction: column; /* 垂直排列用户名项 */
+  gap: 1em; /* 垂直间距 */
+}
+
+/* 用户名项样式 */
+.username-item {
+  display: flex;
+  margin:50px 600px 0 0;
+  align-items: center; /* 头像和用户名垂直居中 */
+  gap: 0.5em; /* 头像和用户名之间的间距 */
+}
+
+/* 头像样式 */
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* 使头像圆形 */
+  background-color: #ccc; /* 头像背景颜色 */
+  object-fit: cover; /* 保持头像的比例 */
+}
+
+/* 用户名样式 */
+.username {
+  color: white;
+  margin: 0 0 0 50px;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+
+/* 我的资源样式 */
+.my-resources {
+  display: flex;
+  flex-direction: column; /* 垂直排列 */
+  align-items: flex-start; /* 左对齐 */
+  gap: 0.25em; /* 资源之间的间距 */
+}
+.resources{
+  list-style-type: none;
+}
+.resources li{
+    float: left;
+    padding: 0 15px;
+    
+}
+.resources li:hover{
+  color: white;
+}
+.wrap{
+  margin: 50px 0 0 200px;
+  display: flex;
+  gap: 1em;
+
+}
+.page-manage-left{
+  display: flex;
+  border-right:1px solid  #b3b3b3;
+  flex-direction: column;
+}
+.image-row {  
+    display: flex;  
+    flex-wrap: wrap; /* 允许容器内的项目换行 */  
+    justify-content: space-between; /* 图片之间均匀分布（可选）*/  
+}  
+  
+.image-row img {  
+    margin-bottom: 10px; /* 图片之间的垂直间距 */  
+}  
+  
+.clearfix::after {  
+    content: "";  
+    display: table;  
+    clear: both; /* 清除浮动 */  
+}  
+  
+/* 如果有需要，你还可以添加点击图片时改变背景颜色的样式 */  
+.image-row .image-container {  
+    /* 这里定义点击后图片容器的背景颜色变化，但通常直接改变img标签的背景不会有效果，因为img是内联元素 */  
+    /* 你可以考虑改变包含图片的div的背景颜色，或者添加一个额外的元素来显示背景颜色 */  
+}
+.option {
+  color: #abaaaa;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  margin-bottom: 0.5em; /* 选项之间的间距 */
+  text-decoration: none; /* 移除默认的下划线 */
+}
+
+/* 选项项悬停样式 */
+.option:active {
+  color: black;
+}
+.page-manage-right{
+  color:#abaaaa;
+  margin: 0 auto;
+
+}
+/* 响应式设计 */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar a, .navbar input, .navbar-icons a {
+    margin: 0.25em 0;
+  }
+  .username-item {
+    flex-direction: column; /* 在小屏幕上垂直排列 */
+  }
+}
